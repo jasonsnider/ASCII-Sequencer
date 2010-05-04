@@ -3,8 +3,6 @@
  * An ASCII sequencer. This wil take any ASCII string and return
  * the next ASCII character in the sequence
  *
- * Copyright Jason Snider 2010. All rights reserved.
- *
  * DICTIONARY
  *  eot - End Of Table
  *
@@ -23,7 +21,7 @@ class Sequencer{
     /**
      * (1)Accepts an alpha-numeric string
      * (2)Converts the alpha-numeric string into a series of ASCII values
-     * (3)Iterates the ASCI values
+     * (3)Iterates the ASCII values
      * @example abc->abd
      * @example 15z->160
      * @example zzz->0000
@@ -62,7 +60,7 @@ class Sequencer{
                 $eot[$pointer] = chr($ascii + 1);
             }
         }
-        //A sequence is needed prepend a 0 to the sequence string
+        //A sequence is needed, prepend a 0 to the sequence string
         if($sequence){
             $eot = "0{$eot}";
         }
