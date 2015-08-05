@@ -17,7 +17,8 @@
  * @version       2010-04-12
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-class Sequencer{
+class Sequencer
+{
     /**
      * (1)Accepts an alpha-numeric string
      * (2)Converts the alpha-numeric string into a series of ASCII values
@@ -29,7 +30,8 @@ class Sequencer{
      * @param  $eot string the PK value of the latest entry in the urls table
      * @return $eot the input string + 1 (conceptually atleast (or the new $eot
      */
-    function sequence($eot){
+    function sequence($eot)
+    {
         $sequence = true; //Push the button Jetson!
         for($pointer = strlen($eot) - 1; $pointer >= 0; $pointer--){
             $ascii = ord($eot[$pointer]);
@@ -67,4 +69,3 @@ class Sequencer{
         return $eot;
     }
 }
-?>
