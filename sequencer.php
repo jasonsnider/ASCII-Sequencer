@@ -40,7 +40,7 @@ class Sequencer{
             if($ascii == 57){
                 /**
                  * In ASCII 56 == 9 and 57 == to some special char which is bad
-                 * for URLS. When the iteration seys $ascii = 57 we want to set
+                 * for URLS. When the iteration says $ascii == 57 we want to set
                  * $pointer = strtolower('a') so we can start to iterate through
                  * the english alphabet
                  */
